@@ -1,0 +1,36 @@
+
+		
+        *{padding: 0px;
+        margin: 8px;}
+        body
+        {
+            background-image: url(mbackground.png);
+			background-color:brown;
+        }
+        header
+        {
+            height: 210px;
+            text-align: center;
+            color: yellow;
+            
+          
+        }
+        div
+        {
+           
+            color:white ;
+            
+        }
+        h2
+        {
+            color: yellow;
+        }
+        .exp{
+            padding-top: 100px;
+        }
+        .intern
+        {
+            color: white;
+            
+        }
+  

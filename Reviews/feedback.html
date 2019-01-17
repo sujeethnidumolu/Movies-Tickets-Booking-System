@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>FEEDBACK</title>
+	 <style type="text/css">
+    body
+        {
+            background-image: url(feedback.jpg);
+        }
+	 select {
+    display: inline-block;
+    padding: 4px 3px 3px 5px;
+    margin-left: 700px;
+    font: inherit;
+    outline:none; /* remove focus ring from Webkit */
+    line-height: 1.2;
+    background: #000;
+    color:white;
+    border:0;
+		 }
+		 h2
+		 {
+			text-align: center;
+		 }
+		 h1
+		 {
+			 text-align: center;
+		 }
+		 button
+		 {
+			color: royalblue;
+			margin-left: 700px;
+}
+		 #rev{margin-left: 700px;}
+		
+		</style>
+	</head>
+<body>
+
+<h1>PLEASE POST YOUR REVIEWS</h1>
+
+
+<form>
+	<h2> ACTING</h2>
+  <select id="act" onchange="ac()" name="Acting">
+  <option value="1">SELECT</option>
+	  <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	   <option value="5">5</option>
+	   
+  </select>
+<h2>DIRECTION</h2>
+  <select id="dir" onchange="run()" name="Direction">
+  <option value="1">SELECT</option>
+	  <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	   <option value="5">5</option>
+  </select>
+<h2>SCREENPALY </h2>
+  <select id="screen" onchange="scr()" name="Acting">
+  <option value="1">SELECT</option>
+	   <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	   <option value="5">5</option>
+  </select>
+	<h2>STORY</h2>
+  <select id="story" onchange="sty()" name="Acting">
+ 
+	   <option value="1">SELECT</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	   <option value="5">5</option>
+  </select>
+	<h2>MUSIC</h2>
+  <select id="music" onchange="mus()" name="Acting">
+  <option value="1">SELECT</option>
+	   <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	   <option value="5">5</option>
+  </select>
+	<br>
+	<br>
+ <button onclick="average()">SUBMIT</button>
+	
+ </form>
+	
+	<script>
+	var txt1;
+	var txt2;
+    var txt3;
+		var txt4;
+		var txt5;
+    function run() {
+      txt1 = document.getElementById("dir").value;
+		
+	}
+		function sty() {
+		 txt2 = document.getElementById("story").value;
+		
+    }
+		function scr() {
+      txt3 = document.getElementById("screen").value;
+		
+	}
+		function ac() {
+      txt4 = document.getElementById("act").value;
+		
+	}
+		function mus() {
+      txt5 = document.getElementById("music").value;
+		
+	}
+		function average()
+		{
+         var a = [txt1,txt2,txt3,txt4,txt5];
+              alert("YOUR REVIEW FOR THIS MOVIE IS"  + "   " + eval(a.join('+'))/a.length + "   " + "THANK YOU!!! :) ");
+		}
+		
+
+	</script>
+</body>
+</html>
+
+         
+        
+   
+	

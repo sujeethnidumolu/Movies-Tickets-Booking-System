@@ -1,0 +1,19 @@
+1. Database creation:
+//name of the database movie.
+
+CREATE DATABASE movie;
+
+2.Creating table users:
+
+CREATE TABLE users(
+   userid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   full_name VARCHAR(50),
+   student_id int(10),
+   phone_number int(15));
+
+3.Creating theater table:
+
+CREATE TABLE theater(
+   theaterid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   selected_time VARCHAR(50),
+   movie_name VARCHAR(50));
